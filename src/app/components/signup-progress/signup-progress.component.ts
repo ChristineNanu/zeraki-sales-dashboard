@@ -1,4 +1,3 @@
-import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { NgxChartsModule, PieChartModule } from '@swimlane/ngx-charts';
 import { ApiService } from '../../services/api.service';
@@ -15,14 +14,11 @@ const targetCounts: TargetCounts = {
 
 @Component({
   selector: 'app-signup-progress',
-  standalone: true,
-  imports: [CommonModule, NgxChartsModule,  PieChartModule],
   templateUrl: './signup-progress.component.html',
-  styleUrl: './signup-progress.component.css'
+  styleUrls: ['./signup-progress.component.css'],
+  standalone: true // Indicates that this component can be used as a standalone component
 })
-
-
-export class SignupProgressComponent implements OnInit{
+export class SignupProgressComponent implements OnInit {
   chartData: { name: string, value: number }[] = [];
 
   constructor(private apiService: ApiService) { }
@@ -34,8 +30,10 @@ export class SignupProgressComponent implements OnInit{
         return acc;
       }, {});
 
-      this.chartData = Object.keys(schoolsGroupedByProduct).map(product => ({ name: `${product} (Target: ${targetCounts[product]})`, value: schoolsGroupedByProduct[product]}));
+      this.chartData = Object.keys(schoolsGroupedByProduct).map(product => ({
+        name: `${product} (Target: ${targetCounts[product]})`,
+        value: schoolsGroupedByProduct[product]
+      }));
     });
   }
-
 }
