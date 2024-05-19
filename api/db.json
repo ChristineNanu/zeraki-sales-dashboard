@@ -2,31 +2,31 @@
   "schools": [
     {
       "id": 1,
-      "name": "Primary School A",
+      "name": "Hekima Primary School ",
       "type": "Primary",
       "product": "Analytics",
-      "county": "County X",
-      "registration_date": "2023-10-15",
-      "contact_information": "John Doe",
+      "county": "Nairobi",
+      "registration_date": "2009-10-15",
+      "contact_information": "+2547123477",
       "school_balance": 1500
     },
     {
       "id": 2,
-      "name": "Secondary School B",
+      "name": "Busara Secondary School B",
       "type": "Secondary",
       "product": "Finance",
-      "county": "County Y",
-      "registration_date": "2024-01-20",
-      "contact_information": "Jane Smith",
+      "county": "Kisumu",
+      "registration_date": "2008-01-20",
+      "contact_information": "+2547891234",
       "school_balance": 2000
     },
     {
       "id": 3,
-      "name": "IGCSE School C",
+      "name": "Brookhurst Schools",
       "type": "IGCSE",
       "product": "Timetable",
-      "county": "County Z",
-      "registration_date": "2023-12-05",
+      "county": "Nakuru",
+      "registration_date": "2010-12-05",
       "contact_information": "Mike Johnson",
       "school_balance": 1800
     }
@@ -37,8 +37,8 @@
       "school_id": 1,
       "invoice_number": "INV001",
       "product": "Analytics",
-      "creation_date": "2024-03-15",
-      "due_date": "2024-04-15",
+      "creation_date": "2024-04-15",
+      "due_date": "2024-05-15",
       "amount": 1000,
       "paid_amount": 800,
       "balance": 200,
@@ -90,7 +90,7 @@
       "id": 3,
       "invoice_id": 1,
       "collection_number": "COL003",
-      "collection_date": "2024-04-20",
+      "collection_date": "2024-05-20",
       "status": "Bounced",
       "amount": 200
     }
