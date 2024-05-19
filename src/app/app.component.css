@@ -1,0 +1,50 @@
+#page {
+  height: 100%;
+  width: 100%;
+}
+
+.sidenav-title {
+  padding: 1em;
+}
+
+.mat-sidenav-container {
+  height: 100vh;
+}
+
+.mat-sidenav-content {
+  height: 100%;
+  padding: 20px;
+}
+
+h1 {
+  padding: 0 1rem;
+}
+
+h2 {padding: 1rem;}
+
+.mat-sidenav {
+  transition: width 0.3s ease;
+}
+
+.mat-sidenav .entry{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding:0.75rem;
+}
+
+mat-sidenav-content{
+  padding-top: 3.5rem;
+  @media screen and (min-width: 600px) {
+      padding-top: 4rem;
+  }
+}
+
+.expanded {
+  width: 250px;
+}
+
+.nav-item-title{
+  display: table-caption;
+  padding-left: 1em;
+}

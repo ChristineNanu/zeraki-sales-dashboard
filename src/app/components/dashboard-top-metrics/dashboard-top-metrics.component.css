@@ -1,0 +1,13 @@
+.metric-container {
+  display: flex;
+}
+
+.metric {
+  flex: 1;
+  padding: 1em;
+  text-align: center;
+}
+
+.metric p {
+  font-size: 1.5em;
+}
